@@ -1,3 +1,4 @@
+//NAVBAR
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -7,4 +8,16 @@ menu.onclick = () => {
 
 window.onscroll = () => {
     navbar.classList.remove('active');
+}
+//DARK MODE
+let darkmode = document.querySelector('#darkmode');
+
+darkmode.onclick = () => {
+    if(darkmode.classList.contains('bx-moon')){
+        darkmode.classList.replace('bx-moon','bx-sun');
+        document.body.classList.add('active');
+    }else{
+        darkmode.classList.replace('bx-sun','bx-moon');
+        document.body.classList.remove('active');
+    }
 }

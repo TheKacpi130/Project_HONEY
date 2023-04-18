@@ -25,9 +25,17 @@
 section{
     padding: 50px 10%;
 }
+body.active{
+    --text-color: #fff;
+    --bg-color: #1f1e20;
+}
 body{
     color: var(--text-color);
     background: var(--bg-color);
+}
+#darkmode{
+    font-size: 25px;
+    cursor: pointer;
 }
 header{
     position: fixed;
@@ -281,6 +289,11 @@ header{
         padding: 1.5rem;
         display: block;
         background: var(--bg-color);
+    }
+    #darkmode{
+        position: absolute;
+        top: 1.4rem;
+        right: 2rem;
     }
 }
 @media (max-width:715px){
